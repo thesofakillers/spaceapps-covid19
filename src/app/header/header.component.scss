@@ -1,0 +1,19 @@
+.header-content {
+  display: grid;
+  grid-rows: 100%;
+  grid-columns: 10% 80% 10%;
+}
+
+.title {
+  grid-area: 1 / 2;
+  text-align: center;
+}
+
+.navigation {
+  grid-area: 1 / 3;
+  text-align: end;
+}
+
+a {
+  padding: 10px;
+}
