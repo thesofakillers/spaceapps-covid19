@@ -6,9 +6,31 @@ $secondary: #36454f !default;
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
 
+@font-face {
+  font-family: moon-regular;
+  src: url(/assets/moon-regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: moon-bold;
+  src: url(/assets/moon-bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: moon-light;
+  src: url(/assets/moon-light.otf) format("opentype");
+}
 
 body {
   color: $primary;
   background-color: $secondary;
   font-size: large;
+}
+
+h1 {
+  font-family: 'moon-bold';
+}
+
+h2 {
+  font-family: 'moon-regular';
 }
