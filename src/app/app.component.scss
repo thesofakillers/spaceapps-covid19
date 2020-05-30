@@ -1,0 +1,33 @@
+@import "../styles.scss";
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header'
+    'main main main right'
+    'footer footer footer footer';
+  grid-gap: 10px;
+  background-color: $secondary;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.header {
+  grid-area: header;
+  justify-self: center;
+  font-size: 32px;
+}
+
+.content {
+  grid-area: main;
+  justify-self: center;
+}
+
+.image {
+  grid-area: right;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+}

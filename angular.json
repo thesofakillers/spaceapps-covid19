@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "spaceapps-covid19"
+    }
+  },
+  "defaultProject": "spaceapps-covid19",
+  "cli": {
+    "analytics": "109e67c1-a124-4904-8323-1eb62bc52718"
+  }
 }
