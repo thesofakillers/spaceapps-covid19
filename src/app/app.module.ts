@@ -7,28 +7,20 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { HeaderComponent } from './header/header.component';
-import { GraphComponent } from './visuals/graph/graph.component';
-import { D3Service, D3_DIRECTIVES } from './d3';
-import { SHARED_VISUALS } from './visuals/shared';
-import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,
-    HeaderComponent,
-    GraphComponent,
-    ...SHARED_VISUALS,
-    ...D3_DIRECTIVES
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule,
-    FormsModule,
+    NgbModule
   ],
-  providers: [D3Service],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
